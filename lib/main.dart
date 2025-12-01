@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+
 import 'LoginScreen.dart';
 void main() => runApp(const PetzyApp());
 
@@ -8,9 +8,15 @@ class PetzyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp( theme: ThemeData(elevatedButtonTheme:ElevatedButtonThemeData(style: ButtonStyle(backgroundColor: WidgetStateColor.fromMap(
+  <WidgetStatesConstraint, Color>{
+    WidgetState.pressed: Colors.red,
+    WidgetState.hovered: Colors.blue,
+    WidgetState.any: Color.fromARGB(255, 32, 137, 246),
+  },
+)))),
       title: 'Petzy',
-      theme: PetzyTheme.light(),
+      
       home: const LoginScreen(),
     );
   }

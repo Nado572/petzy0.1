@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
@@ -62,7 +62,7 @@ class SignUpScreen extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromRGBO(3, 29, 179, 1),
+                            backgroundColor: const Color.fromARGB(255, 32, 137, 246),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18),
                             ),
@@ -70,7 +70,7 @@ class SignUpScreen extends StatelessWidget {
                           child: const Text(
                             'Sign up',
                             style: TextStyle(
-                                fontSize: 16,color: Color(0xFFA4D96C), fontWeight: FontWeight.w600),
+                                fontSize: 16,color: Color.fromARGB(255, 255, 255, 255), fontWeight: FontWeight.w600),
                           ),
                         ),
                       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+
 import 'SignUpScreen.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -75,7 +76,12 @@ class LoginScreen extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: TextButton(
                           onPressed: () {},
-                          child: const Text('Forgot password?'),
+                          child: const Text(
+                            'Forgot password?',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0), // white
+                            ),
+                          ),
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -84,7 +90,8 @@ class LoginScreen extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 108, 201, 255),
+                            backgroundColor:
+                                const Color.fromARGB(255, 32, 137, 246),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18),
                             ),
@@ -92,7 +99,9 @@ class LoginScreen extends StatelessWidget {
                           child: const Text(
                             'Login',
                             style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w600),
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                fontWeight: FontWeight.w600),
                           ),
                         ),
                       ),
@@ -114,8 +123,12 @@ class LoginScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      child: const Text('Sign up'),
-                        
+                      child: const Text(
+                        'Sign up',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
                     ),
                   ],
                 ),
